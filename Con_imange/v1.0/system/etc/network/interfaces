@@ -1,0 +1,14 @@
+# This file describes the network interfaces available on your system 
+# and how to activate them. For more information, see interfaces(5). 
+# 
+# The loopback network interface（配置环回口） 
+# 开机自动激lo接口 
+auto lo 
+# 配置lo接口为环回口 
+iface lo inet loopback 
+# 
+# The primary network interface （配置主网络接口） 
+#开机自动激活eth0接口 
+auto eth0 
+#配置eth0接口为DHCP自动获取 
+iface eth0 inet dhcp

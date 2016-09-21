@@ -1,0 +1,2 @@
+1.Add automatically obtain ip service, which completing connect to internet;
+

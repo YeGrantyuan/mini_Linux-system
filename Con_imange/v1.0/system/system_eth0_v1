@@ -1,0 +1,513 @@
+.
+├── bin
+│   ├── ash -> busybox
+│   ├── base64 -> busybox
+│   ├── busybox
+│   ├── cat -> busybox
+│   ├── catv -> busybox
+│   ├── chattr -> busybox
+│   ├── chgrp -> busybox
+│   ├── chmod -> busybox
+│   ├── chown -> busybox
+│   ├── conspy -> busybox
+│   ├── cp -> busybox
+│   ├── cpio -> busybox
+│   ├── cttyhack -> busybox
+│   ├── date -> busybox
+│   ├── dd -> busybox
+│   ├── df -> busybox
+│   ├── dmesg -> busybox
+│   ├── dnsdomainname -> busybox
+│   ├── dumpkmap -> busybox
+│   ├── echo -> busybox
+│   ├── ed -> busybox
+│   ├── egrep -> busybox
+│   ├── false -> busybox
+│   ├── fdflush -> busybox
+│   ├── fgrep -> busybox
+│   ├── fsync -> busybox
+│   ├── getopt -> busybox
+│   ├── grep -> busybox
+│   ├── gunzip -> busybox
+│   ├── gzip -> busybox
+│   ├── hostname -> busybox
+│   ├── hush -> busybox
+│   ├── ionice -> busybox
+│   ├── iostat -> busybox
+│   ├── ipcalc -> busybox
+│   ├── kbd_mode -> busybox
+│   ├── kill -> busybox
+│   ├── linux32 -> busybox
+│   ├── linux64 -> busybox
+│   ├── ln -> busybox
+│   ├── login -> busybox
+│   ├── ls -> busybox
+│   ├── lsattr -> busybox
+│   ├── lzop -> busybox
+│   ├── makemime -> busybox
+│   ├── mkdir -> busybox
+│   ├── mknod -> busybox
+│   ├── mktemp -> busybox
+│   ├── more -> busybox
+│   ├── mount -> busybox
+│   ├── mountpoint -> busybox
+│   ├── mpstat -> busybox
+│   ├── mt -> busybox
+│   ├── mv -> busybox
+│   ├── netstat -> busybox
+│   ├── nice -> busybox
+│   ├── pidof -> busybox
+│   ├── ping -> busybox
+│   ├── ping6 -> busybox
+│   ├── pipe_progress -> busybox
+│   ├── printenv -> busybox
+│   ├── ps -> busybox
+│   ├── pwd -> busybox
+│   ├── reformime -> busybox
+│   ├── rev -> busybox
+│   ├── rm -> busybox
+│   ├── rmdir -> busybox
+│   ├── rpm -> busybox
+│   ├── run-parts -> busybox
+│   ├── scriptreplay -> busybox
+│   ├── sed -> busybox
+│   ├── setarch -> busybox
+│   ├── setserial -> busybox
+│   ├── sh -> busybox
+│   ├── sleep -> busybox
+│   ├── stat -> busybox
+│   ├── stty -> busybox
+│   ├── su -> busybox
+│   ├── sync -> busybox
+│   ├── tar -> busybox
+│   ├── touch -> busybox
+│   ├── true -> busybox
+│   ├── umount -> busybox
+│   ├── uname -> busybox
+│   ├── usleep -> busybox
+│   ├── vi -> busybox
+│   ├── watch -> busybox
+│   └── zcat -> busybox
+├── dev
+├── etc
+│   ├── eth0-setting
+│   ├── init.d
+│   │   ├── ifconfig-eth0
+│   │   └── rcS
+│   ├── network
+│   │   ├── if-down.d
+│   │   │   ├── avahi-autoipd
+│   │   │   ├── postfix
+│   │   │   ├── resolvconf
+│   │   │   ├── upstart
+│   │   │   └── wpasupplicant -> ../../wpa_supplicant/ifupdown.sh
+│   │   ├── if-post-down.d
+│   │   │   ├── avahi-daemon -> ../if-up.d/avahi-daemon
+│   │   │   ├── wireless-tools
+│   │   │   └── wpasupplicant -> ../../wpa_supplicant/ifupdown.sh
+│   │   ├── if-pre-up.d
+│   │   │   ├── ethtool
+│   │   │   ├── wireless-tools
+│   │   │   └── wpasupplicant -> ../../wpa_supplicant/ifupdown.sh
+│   │   ├── if-up.d
+│   │   │   ├── 000resolvconf
+│   │   │   ├── avahi-autoipd
+│   │   │   ├── avahi-daemon
+│   │   │   ├── ethtool
+│   │   │   ├── ntpdate
+│   │   │   ├── openssh-server
+│   │   │   ├── postfix
+│   │   │   ├── upstart
+│   │   │   └── wpasupplicant -> ../../wpa_supplicant/ifupdown.sh
+│   │   ├── interfaces
+│   │   └── run -> /run/network
+│   ├── NetworkManager
+│   │   ├── dispatcher.d
+│   │   │   └── 01ifupdown
+│   │   ├── dnsmasq.d
+│   │   ├── NetworkManager.conf
+│   │   ├── system-connections
+│   │   └── VPN
+│   │       └── nm-pptp-service.name
+│   ├── networks
+│   ├── passwd
+│   ├── profile
+│   └── rc.d
+│       └── init.d
+│           └── netd
+├── lib
+│   ├── ld-2.10.1.so
+│   ├── ld-linux.so.3 -> ld-2.10.1.so
+│   ├── lib
+│   │   ├── ld-2.10.1.so
+│   │   ├── ld-linux.so.3 -> ld-2.10.1.so
+│   │   ├── libanl-2.10.1.so
+│   │   ├── libanl.so.1 -> libanl-2.10.1.so
+│   │   ├── libBrokenLocale-2.10.1.so
+│   │   ├── libBrokenLocale.so.1 -> libBrokenLocale-2.10.1.so
+│   │   ├── libc-2.10.1.so
+│   │   ├── libcidn-2.10.1.so
+│   │   ├── libcidn.so.1 -> libcidn-2.10.1.so
+│   │   ├── libcrypt-2.10.1.so
+│   │   ├── libcrypt.so.1 -> libcrypt-2.10.1.so
+│   │   ├── libc.so.6 -> libc-2.10.1.so
+│   │   ├── libdl-2.10.1.so
+│   │   ├── libdl.so.2 -> libdl-2.10.1.so
+│   │   ├── libgcc_s.so -> libgcc_s.so.1
+│   │   ├── libgcc_s.so.1
+│   │   ├── libm-2.10.1.so
+│   │   ├── libmemusage.so
+│   │   ├── libm.so.6 -> libm-2.10.1.so
+│   │   ├── libnsl-2.10.1.so
+│   │   ├── libnsl.so.1 -> libnsl-2.10.1.so
+│   │   ├── libnss_compat-2.10.1.so
+│   │   ├── libnss_compat.so.2 -> libnss_compat-2.10.1.so
+│   │   ├── libnss_dns-2.10.1.so
+│   │   ├── libnss_dns.so.2 -> libnss_dns-2.10.1.so
+│   │   ├── libnss_files-2.10.1.so
+│   │   ├── libnss_files.so.2 -> libnss_files-2.10.1.so
+│   │   ├── libnss_hesiod-2.10.1.so
+│   │   ├── libnss_hesiod.so.2 -> libnss_hesiod-2.10.1.so
+│   │   ├── libnss_nis-2.10.1.so
+│   │   ├── libnss_nisplus-2.10.1.so
+│   │   ├── libnss_nisplus.so.2 -> libnss_nisplus-2.10.1.so
+│   │   ├── libnss_nis.so.2 -> libnss_nis-2.10.1.so
+│   │   ├── libpcprofile.so
+│   │   ├── libpthread-2.10.1.so
+│   │   ├── libpthread.so.0 -> libpthread-2.10.1.so
+│   │   ├── libresolv-2.10.1.so
+│   │   ├── libresolv.so.2 -> libresolv-2.10.1.so
+│   │   ├── librt-2.10.1.so
+│   │   ├── librt.so.1 -> librt-2.10.1.so
+│   │   ├── libSegFault.so
+│   │   ├── libthread_db-1.0.so
+│   │   ├── libthread_db.so.1 -> libthread_db-1.0.so
+│   │   ├── libutil-2.10.1.so
+│   │   └── libutil.so.1 -> libutil-2.10.1.so
+│   ├── libanl-2.10.1.so
+│   ├── libanl.so.1 -> libanl-2.10.1.so
+│   ├── libBrokenLocale-2.10.1.so
+│   ├── libBrokenLocale.so.1 -> libBrokenLocale-2.10.1.so
+│   ├── libc-2.10.1.so
+│   ├── libcidn-2.10.1.so
+│   ├── libcidn.so.1 -> libcidn-2.10.1.so
+│   ├── libcrypt-2.10.1.so
+│   ├── libcrypt.so.1 -> libcrypt-2.10.1.so
+│   ├── libc.so.6 -> libc-2.10.1.so
+│   ├── libdl-2.10.1.so
+│   ├── libdl.so.2 -> libdl-2.10.1.so
+│   ├── libgcc_s.so -> libgcc_s.so.1
+│   ├── libgcc_s.so.1
+│   ├── libm-2.10.1.so
+│   ├── libmemusage.so
+│   ├── libm.so.6 -> libm-2.10.1.so
+│   ├── libnsl-2.10.1.so
+│   ├── libnsl.so.1 -> libnsl-2.10.1.so
+│   ├── libnss_compat-2.10.1.so
+│   ├── libnss_compat.so.2 -> libnss_compat-2.10.1.so
+│   ├── libnss_dns-2.10.1.so
+│   ├── libnss_dns.so.2 -> libnss_dns-2.10.1.so
+│   ├── libnss_files-2.10.1.so
+│   ├── libnss_files.so.2 -> libnss_files-2.10.1.so
+│   ├── libnss_hesiod-2.10.1.so
+│   ├── libnss_hesiod.so.2 -> libnss_hesiod-2.10.1.so
+│   ├── libnss_nis-2.10.1.so
+│   ├── libnss_nisplus-2.10.1.so
+│   ├── libnss_nisplus.so.2 -> libnss_nisplus-2.10.1.so
+│   ├── libnss_nis.so.2 -> libnss_nis-2.10.1.so
+│   ├── libpcprofile.so
+│   ├── libpthread-2.10.1.so
+│   ├── libpthread.so.0 -> libpthread-2.10.1.so
+│   ├── libresolv-2.10.1.so
+│   ├── libresolv.so.2 -> libresolv-2.10.1.so
+│   ├── librt-2.10.1.so
+│   ├── librt.so.1 -> librt-2.10.1.so
+│   ├── libSegFault.so
+│   ├── libthread_db-1.0.so
+│   ├── libthread_db.so.1 -> libthread_db-1.0.so
+│   ├── libutil-2.10.1.so
+│   └── libutil.so.1 -> libutil-2.10.1.so
+├── linuxrc -> bin/busybox
+├── mnt
+├── proc
+├── sbin
+│   ├── acpid -> ../bin/busybox
+│   ├── adjtimex -> ../bin/busybox
+│   ├── arp -> ../bin/busybox
+│   ├── blkid -> ../bin/busybox
+│   ├── blockdev -> ../bin/busybox
+│   ├── bootchartd -> ../bin/busybox
+│   ├── depmod -> ../bin/busybox
+│   ├── devmem -> ../bin/busybox
+│   ├── fbsplash -> ../bin/busybox
+│   ├── fdisk -> ../bin/busybox
+│   ├── findfs -> ../bin/busybox
+│   ├── freeramdisk -> ../bin/busybox
+│   ├── fsck -> ../bin/busybox
+│   ├── fsck.minix -> ../bin/busybox
+│   ├── fstrim -> ../bin/busybox
+│   ├── getty -> ../bin/busybox
+│   ├── halt -> ../bin/busybox
+│   ├── hdparm -> ../bin/busybox
+│   ├── hwclock -> ../bin/busybox
+│   ├── ifconfig -> ../bin/busybox
+│   ├── ifdown -> ../bin/busybox
+│   ├── ifenslave -> ../bin/busybox
+│   ├── ifup -> ../bin/busybox
+│   ├── init -> ../bin/busybox
+│   ├── insmod -> ../bin/busybox
+│   ├── ip -> ../bin/busybox
+│   ├── ipaddr -> ../bin/busybox
+│   ├── iplink -> ../bin/busybox
+│   ├── iproute -> ../bin/busybox
+│   ├── iprule -> ../bin/busybox
+│   ├── iptunnel -> ../bin/busybox
+│   ├── klogd -> ../bin/busybox
+│   ├── loadkmap -> ../bin/busybox
+│   ├── logread -> ../bin/busybox
+│   ├── losetup -> ../bin/busybox
+│   ├── lsmod -> ../bin/busybox
+│   ├── makedevs -> ../bin/busybox
+│   ├── mdev -> ../bin/busybox
+│   ├── mkdosfs -> ../bin/busybox
+│   ├── mke2fs -> ../bin/busybox
+│   ├── mkfs.ext2 -> ../bin/busybox
+│   ├── mkfs.minix -> ../bin/busybox
+│   ├── mkfs.vfat -> ../bin/busybox
+│   ├── mkswap -> ../bin/busybox
+│   ├── modinfo -> ../bin/busybox
+│   ├── modprobe -> ../bin/busybox
+│   ├── nameif -> ../bin/busybox
+│   ├── pivot_root -> ../bin/busybox
+│   ├── poweroff -> ../bin/busybox
+│   ├── raidautorun -> ../bin/busybox
+│   ├── reboot -> ../bin/busybox
+│   ├── rmmod -> ../bin/busybox
+│   ├── route -> ../bin/busybox
+│   ├── runlevel -> ../bin/busybox
+│   ├── setconsole -> ../bin/busybox
+│   ├── slattach -> ../bin/busybox
+│   ├── start-stop-daemon -> ../bin/busybox
+│   ├── sulogin -> ../bin/busybox
+│   ├── swapoff -> ../bin/busybox
+│   ├── swapon -> ../bin/busybox
+│   ├── switch_root -> ../bin/busybox
+│   ├── sysctl -> ../bin/busybox
+│   ├── syslogd -> ../bin/busybox
+│   ├── tunctl -> ../bin/busybox
+│   ├── udhcpc -> ../bin/busybox
+│   ├── vconfig -> ../bin/busybox
+│   ├── watchdog -> ../bin/busybox
+│   └── zcip -> ../bin/busybox
+├── sys
+├── system_eth0_v1
+├── tmp
+├── usr
+│   ├── bin
+│   │   ├── [ -> ../../bin/busybox
+│   │   ├── [[ -> ../../bin/busybox
+│   │   ├── awk -> ../../bin/busybox
+│   │   ├── basename -> ../../bin/busybox
+│   │   ├── beep -> ../../bin/busybox
+│   │   ├── bunzip2 -> ../../bin/busybox
+│   │   ├── bzcat -> ../../bin/busybox
+│   │   ├── bzip2 -> ../../bin/busybox
+│   │   ├── cal -> ../../bin/busybox
+│   │   ├── chpst -> ../../bin/busybox
+│   │   ├── chrt -> ../../bin/busybox
+│   │   ├── chvt -> ../../bin/busybox
+│   │   ├── cksum -> ../../bin/busybox
+│   │   ├── clear -> ../../bin/busybox
+│   │   ├── cmp -> ../../bin/busybox
+│   │   ├── comm -> ../../bin/busybox
+│   │   ├── crontab -> ../../bin/busybox
+│   │   ├── cryptpw -> ../../bin/busybox
+│   │   ├── cut -> ../../bin/busybox
+│   │   ├── dc -> ../../bin/busybox
+│   │   ├── deallocvt -> ../../bin/busybox
+│   │   ├── diff -> ../../bin/busybox
+│   │   ├── dirname -> ../../bin/busybox
+│   │   ├── dos2unix -> ../../bin/busybox
+│   │   ├── du -> ../../bin/busybox
+│   │   ├── dumpleases -> ../../bin/busybox
+│   │   ├── eject -> ../../bin/busybox
+│   │   ├── env -> ../../bin/busybox
+│   │   ├── envdir -> ../../bin/busybox
+│   │   ├── envuidgid -> ../../bin/busybox
+│   │   ├── expand -> ../../bin/busybox
+│   │   ├── expr -> ../../bin/busybox
+│   │   ├── fgconsole -> ../../bin/busybox
+│   │   ├── find -> ../../bin/busybox
+│   │   ├── flock -> ../../bin/busybox
+│   │   ├── fold -> ../../bin/busybox
+│   │   ├── free -> ../../bin/busybox
+│   │   ├── ftpget -> ../../bin/busybox
+│   │   ├── ftpput -> ../../bin/busybox
+│   │   ├── fuser -> ../../bin/busybox
+│   │   ├── groups -> ../../bin/busybox
+│   │   ├── hd -> ../../bin/busybox
+│   │   ├── head -> ../../bin/busybox
+│   │   ├── hexdump -> ../../bin/busybox
+│   │   ├── hostid -> ../../bin/busybox
+│   │   ├── id -> ../../bin/busybox
+│   │   ├── install -> ../../bin/busybox
+│   │   ├── ipcrm -> ../../bin/busybox
+│   │   ├── ipcs -> ../../bin/busybox
+│   │   ├── killall -> ../../bin/busybox
+│   │   ├── last -> ../../bin/busybox
+│   │   ├── less -> ../../bin/busybox
+│   │   ├── logger -> ../../bin/busybox
+│   │   ├── logname -> ../../bin/busybox
+│   │   ├── lpq -> ../../bin/busybox
+│   │   ├── lpr -> ../../bin/busybox
+│   │   ├── lsof -> ../../bin/busybox
+│   │   ├── lspci -> ../../bin/busybox
+│   │   ├── lsusb -> ../../bin/busybox
+│   │   ├── lzcat -> ../../bin/busybox
+│   │   ├── lzma -> ../../bin/busybox
+│   │   ├── lzopcat -> ../../bin/busybox
+│   │   ├── man -> ../../bin/busybox
+│   │   ├── md5sum -> ../../bin/busybox
+│   │   ├── mesg -> ../../bin/busybox
+│   │   ├── microcom -> ../../bin/busybox
+│   │   ├── mkfifo -> ../../bin/busybox
+│   │   ├── mkpasswd -> ../../bin/busybox
+│   │   ├── nc -> ../../bin/busybox
+│   │   ├── nmeter -> ../../bin/busybox
+│   │   ├── nohup -> ../../bin/busybox
+│   │   ├── nslookup -> ../../bin/busybox
+│   │   ├── od -> ../../bin/busybox
+│   │   ├── openvt -> ../../bin/busybox
+│   │   ├── passwd -> ../../bin/busybox
+│   │   ├── patch -> ../../bin/busybox
+│   │   ├── pgrep -> ../../bin/busybox
+│   │   ├── pkill -> ../../bin/busybox
+│   │   ├── pmap -> ../../bin/busybox
+│   │   ├── printf -> ../../bin/busybox
+│   │   ├── pscan -> ../../bin/busybox
+│   │   ├── pstree -> ../../bin/busybox
+│   │   ├── pwdx -> ../../bin/busybox
+│   │   ├── readlink -> ../../bin/busybox
+│   │   ├── realpath -> ../../bin/busybox
+│   │   ├── renice -> ../../bin/busybox
+│   │   ├── reset -> ../../bin/busybox
+│   │   ├── resize -> ../../bin/busybox
+│   │   ├── rpm2cpio -> ../../bin/busybox
+│   │   ├── runsv -> ../../bin/busybox
+│   │   ├── runsvdir -> ../../bin/busybox
+│   │   ├── rx -> ../../bin/busybox
+│   │   ├── script -> ../../bin/busybox
+│   │   ├── seq -> ../../bin/busybox
+│   │   ├── setkeycodes -> ../../bin/busybox
+│   │   ├── setsid -> ../../bin/busybox
+│   │   ├── setuidgid -> ../../bin/busybox
+│   │   ├── sha1sum -> ../../bin/busybox
+│   │   ├── sha256sum -> ../../bin/busybox
+│   │   ├── sha3sum -> ../../bin/busybox
+│   │   ├── sha512sum -> ../../bin/busybox
+│   │   ├── showkey -> ../../bin/busybox
+│   │   ├── smemcap -> ../../bin/busybox
+│   │   ├── softlimit -> ../../bin/busybox
+│   │   ├── sort -> ../../bin/busybox
+│   │   ├── split -> ../../bin/busybox
+│   │   ├── strings -> ../../bin/busybox
+│   │   ├── sum -> ../../bin/busybox
+│   │   ├── sv -> ../../bin/busybox
+│   │   ├── tac -> ../../bin/busybox
+│   │   ├── tail -> ../../bin/busybox
+│   │   ├── tcpsvd -> ../../bin/busybox
+│   │   ├── tee -> ../../bin/busybox
+│   │   ├── telnet -> ../../bin/busybox
+│   │   ├── test -> ../../bin/busybox
+│   │   ├── tftp -> ../../bin/busybox
+│   │   ├── time -> ../../bin/busybox
+│   │   ├── timeout -> ../../bin/busybox
+│   │   ├── top -> ../../bin/busybox
+│   │   ├── tr -> ../../bin/busybox
+│   │   ├── traceroute -> ../../bin/busybox
+│   │   ├── traceroute6 -> ../../bin/busybox
+│   │   ├── tty -> ../../bin/busybox
+│   │   ├── ttysize -> ../../bin/busybox
+│   │   ├── udpsvd -> ../../bin/busybox
+│   │   ├── unexpand -> ../../bin/busybox
+│   │   ├── uniq -> ../../bin/busybox
+│   │   ├── unix2dos -> ../../bin/busybox
+│   │   ├── unlzma -> ../../bin/busybox
+│   │   ├── unlzop -> ../../bin/busybox
+│   │   ├── unxz -> ../../bin/busybox
+│   │   ├── unzip -> ../../bin/busybox
+│   │   ├── uptime -> ../../bin/busybox
+│   │   ├── users -> ../../bin/busybox
+│   │   ├── uudecode -> ../../bin/busybox
+│   │   ├── uuencode -> ../../bin/busybox
+│   │   ├── vlock -> ../../bin/busybox
+│   │   ├── volname -> ../../bin/busybox
+│   │   ├── wall -> ../../bin/busybox
+│   │   ├── wc -> ../../bin/busybox
+│   │   ├── wget -> ../../bin/busybox
+│   │   ├── which -> ../../bin/busybox
+│   │   ├── who -> ../../bin/busybox
+│   │   ├── whoami -> ../../bin/busybox
+│   │   ├── whois -> ../../bin/busybox
+│   │   ├── xargs -> ../../bin/busybox
+│   │   ├── xz -> ../../bin/busybox
+│   │   ├── xzcat -> ../../bin/busybox
+│   │   └── yes -> ../../bin/busybox
+│   └── sbin
+│       ├── addgroup -> ../../bin/busybox
+│       ├── add-shell -> ../../bin/busybox
+│       ├── adduser -> ../../bin/busybox
+│       ├── arping -> ../../bin/busybox
+│       ├── brctl -> ../../bin/busybox
+│       ├── chat -> ../../bin/busybox
+│       ├── chpasswd -> ../../bin/busybox
+│       ├── chroot -> ../../bin/busybox
+│       ├── crond -> ../../bin/busybox
+│       ├── delgroup -> ../../bin/busybox
+│       ├── deluser -> ../../bin/busybox
+│       ├── dhcprelay -> ../../bin/busybox
+│       ├── dnsd -> ../../bin/busybox
+│       ├── ether-wake -> ../../bin/busybox
+│       ├── fakeidentd -> ../../bin/busybox
+│       ├── fbset -> ../../bin/busybox
+│       ├── fdformat -> ../../bin/busybox
+│       ├── ftpd -> ../../bin/busybox
+│       ├── httpd -> ../../bin/busybox
+│       ├── ifplugd -> ../../bin/busybox
+│       ├── inetd -> ../../bin/busybox
+│       ├── killall5 -> ../../bin/busybox
+│       ├── loadfont -> ../../bin/busybox
+│       ├── lpd -> ../../bin/busybox
+│       ├── nanddump -> ../../bin/busybox
+│       ├── nandwrite -> ../../bin/busybox
+│       ├── nbd-client -> ../../bin/busybox
+│       ├── ntpd -> ../../bin/busybox
+│       ├── popmaildir -> ../../bin/busybox
+│       ├── powertop -> ../../bin/busybox
+│       ├── rdate -> ../../bin/busybox
+│       ├── rdev -> ../../bin/busybox
+│       ├── readahead -> ../../bin/busybox
+│       ├── readprofile -> ../../bin/busybox
+│       ├── remove-shell -> ../../bin/busybox
+│       ├── rtcwake -> ../../bin/busybox
+│       ├── sendmail -> ../../bin/busybox
+│       ├── setfont -> ../../bin/busybox
+│       ├── setlogcons -> ../../bin/busybox
+│       ├── svlogd -> ../../bin/busybox
+│       ├── telnetd -> ../../bin/busybox
+│       ├── tftpd -> ../../bin/busybox
+│       ├── ubiattach -> ../../bin/busybox
+│       ├── ubidetach -> ../../bin/busybox
+│       ├── ubimkvol -> ../../bin/busybox
+│       ├── ubirmvol -> ../../bin/busybox
+│       ├── ubirsvol -> ../../bin/busybox
+│       ├── ubiupdatevol -> ../../bin/busybox
+│       └── udhcpd -> ../../bin/busybox
+└── var
+    ├── lib
+    ├── lock
+    ├── log
+    ├── run
+    └── tmp
+
+33 directories, 477 files
