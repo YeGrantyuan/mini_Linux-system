@@ -1,0 +1,53 @@
+#!/bin/sh
+
+APP=sshd
+APP_DIR="/usr/local/sbin/sshd"
+
+usage() {
+	echo "Usage: `basename $0` <start/stop/restart>"
+	exit 1
+}
+
+start() {
+	local APP_STATUS  
+	APP_STATUS=`ps | grep sshd | grep -v "grep"`
+	if [ "$APP_STATUS" == "0" ];then
+		echo "Server is running"
+		exit 1
+	fi
+
+	echo "Start sshd server..."
+	$APP_DIR 
+}
+
+stop() {
+	echo "Stop sshd server... "
+	pid=`/bin/pidof $APP` 
+	if [ -n "$pid" ]; then
+		kill -9 $pid
+	fi
+
+}
+
+restart() {
+	echo "Restart sshd server... "
+	stop
+	start
+}
+
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart)
+		restart
+		;;
+	*)
+		usage
+		;;
+esac	
+
+exit 0
